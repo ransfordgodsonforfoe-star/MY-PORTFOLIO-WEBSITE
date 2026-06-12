@@ -14,7 +14,7 @@
 
 <header>
     <nav class="navbar">
-        <h2 class="logo">Ransford</h2>
+        
 
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
@@ -146,18 +146,31 @@
 
     <form action="https://formspree.io/f/xvznbvqq" method="POST" class="contact-form">
 
+    <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+    >
 
-        <input type="text" placeholder="Your Name" required>
+    <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required
+    >
 
-        <input type="email" placeholder="Your Email" required>
+    <textarea
+        name="message"
+        placeholder="Your Message"
+        required
+    ></textarea>
 
-        <textarea placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">
+        Send Message
+    </button>
 
-        <button type="submit" class="btn">
-            Send Message
-        </button>
-
-    </form>
+</form>
 
 </section>
 
