@@ -74,6 +74,11 @@ body {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
+    
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Adds space between the icon and the text */
+
 }
 
 .nav-links a:hover {
@@ -357,6 +362,7 @@ footer p {
         gap: 15px;
         z-index: 2000; /* Pushes it securely over all other layers */
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        text decoration: none;
     }
 
     .nav-links.active {
@@ -365,6 +371,12 @@ footer p {
 
     .hero {
         padding-top: calc(var(--nav-height) + 40px);
+    }
+    .nav-links a i {
+        color: #38bdf8; 
+        width: 20px;    
+        text-align: center;
+        
     }
 
     .hero-container {
