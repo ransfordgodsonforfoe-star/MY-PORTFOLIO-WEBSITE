@@ -1,164 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ransford | Portfolio</title>
-
-<link rel="stylesheet" href="style7.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ransford | Portfolio</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style7.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
 
-<!-- PARTICLES -->
-<div id="particles"></div>
+    <!-- PARTICLES -->
+    <div id="particles"></div>
 
-<!-- NAVBAR -->
-<header>
-<nav class="navbar">
-<div class="logo">Ransford.</div>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Ransford.</div>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="menu-toggle" id="menu-toggle">☰</div>
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Hello, I'm <span>Ransford</span></h1>
+                <h3 id="typing"></h3>
+                <p>
+                    Computer Science student at UMaT passionate about web development and software engineering.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn">View Projects</a>
+                    <a href="https://github.com/ransfordgodsonforfoe-star" target="_blank" class="btn-outline">GitHub</a>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img src="me.jpeg" alt="profile">
+            </div>
+        </div>
+    </section>
 
-<ul class="nav-links" id="nav-links">
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#education">Education</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-</header>
+    <!-- ABOUT -->
+    <section class="section" id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Computer Science student at UMaT (Ghana), expected to graduate in 2029.
+            I love building modern web apps and solving real-world problems with code.
+        </p>
+    </section>
 
-<!-- HERO -->
-<section class="hero" id="home">
+    <!-- EDUCATION -->
+    <section class="section dark" id="education">
+        <h2>Education</h2>
+        <div class="card">
+            <h3>University of Mines and Technology (UMaT)</h3>
+            <p>BSc Computer Science</p>
+            <p>Expected Graduation: 2029</p>
+        </div>
+    </section>
 
-<div class="hero-text">
-<h1>Hello, I'm <span>Ransford</span></h1>
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+        <h2>Skills</h2>
+        <div class="grid">
+            <div class="box">HTML</div>
+            <div class="box">CSS</div>
+            <div class="box">JavaScript</div>
+            <div class="box">C++</div>
+            <div class="box">Git</div>
+            <div class="box">GitHub</div>
+            <div class="box">Responsive Design</div>
+            <div class="box">Problem Solving</div>
+        </div>
+    </section>
 
-<h3 id="typing"></h3>
+    <!-- PROJECTS -->
+    <section class="section dark" id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Portfolio Website</h3>
+                <p>Modern responsive portfolio design.</p>
+                <div class="project-links">
+                    <a href="#" class="small-btn">Live</a>
+                    <a href="https://github.com/" class="small-btn">GitHub</a>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Restaurant Website</h3>
+                <p>Responsive restaurant landing page.</p>
+                <div class="project-links">
+                    <a href="#" class="small-btn">Live</a>
+                    <a href="https://github.com/" class="small-btn">GitHub</a>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Login Page</h3>
+                <p>Clean authentication UI.</p>
+                <div class="project-links">
+                    <a href="#" class="small-btn">Live</a>
+                    <a href="https://github.com/" class="small-btn">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<p>
-Computer Science student at UMaT passionate about web development and software engineering.
-</p>
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: ransfordgodsonforfoe@gmail.com</p>
+        <p>Phone: 0556338102</p>
+        <br><br>
+        <h4>Get in Touch</h4>
+        <br>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-<div class="hero-buttons">
-<a href="#projects" class="btn">View Projects</a>
-<a href="https://github.com/ransfordgodsonforfoe-star" target="_blank" class="btn-outline">GitHub</a>
-</div>
-</div>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Ransford Godson Forfoe</p>
+        <div class="footer-socials">
+            <a href="https://github.com/ransfordgodsonforfoe-star" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:ransfordgodsonforfoe@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
 
-<div class="hero-img">
-<img src="me.jpeg" alt="profile">
-</div>
-
-</section>
-
-<!-- ABOUT -->
-<section class="section" id="about">
-<h2>About Me</h2>
-<p>
-I am a Computer Science student at UMaT (Ghana), expected to graduate in 2029.
-I love building modern web apps and solving real-world problems with code.
-</p>
-</section>
-
-<!-- EDUCATION -->
-<section class="section dark" id="education">
-<h2>Education</h2>
-
-<div class="card">
-<h3>University of Mines and Technology (UMaT)</h3>
-<p>BSc Computer Science</p>
-<p>Expected Graduation: 2029</p>
-</div>
-</section>
-
-<!-- SKILLS -->
-<section class="section" id="skills">
-<h2>Skills</h2>
-
-<div class="grid">
-<div class="box">HTML</div>
-<div class="box">CSS</div>
-<div class="box">JavaScript</div>
-<div class="box">C++</div>
-<div class="box">Git</div>
-<div class="box">GitHub</div>
-<div class="box">Responsive Design</div>
-<div class="box">Problem Solving</div>
-</div>
-</section>
-
-<!-- PROJECTS -->
-<section class="section dark" id="projects">
-<h2>Projects</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Portfolio Website</h3>
-<p>Modern responsive portfolio design.</p>
-<div class="project-links">
-<a href="#" class="small-btn">Live</a>
-<a href="https://github.com/" class="small-btn">GitHub</a>
-</div>
-</div>
-
-<div class="card">
-<h3>Restaurant Website</h3>
-<p>Responsive restaurant landing page.</p>
-<div class="project-links">
-<a href="#" class="small-btn">Live</a>
-<a href="https://github.com/" class="small-btn">GitHub</a>
-</div>
-</div>
-
-<div class="card">
-<h3>Login Page</h3>
-<p>Clean authentication UI.</p>
-<div class="project-links">
-<a href="#" class="small-btn">Live</a>
-<a href="https://github.com/" class="small-btn">GitHub</a>
-</div>
-</div>
-
-</div>
-</section>
-
-<!-- CONTACT -->
-<section class="section" id="contact">
-<h2>Contact Me</h2>
-
-<p>Email: ransfordgodsonforfoe@gmail.com</p>
-<p>Phone: 0556338102</p>
-<br>
-<br>
-<h4>Get in Touch</h4>
-<br>
-
-<form class="contact-form">
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
-<textarea placeholder="Your Message" required></textarea>
-<button type="submit">Send Message</button>
-</form>
-</section>
-
-<!-- FOOTER -->
-<footer>
-<p>© 2026 Ransford Godson Forfoe</p>
-
-<div class="footer-socials">
-<a href="https://github.com/ransfordgodsonforfoe-star"><i class="fa-brands fa-github"></i></a>
-<a href="mailto:ransfordgodsonforfoe@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-</div>
-</footer>
-
-<script src="script.js"></script>
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 </html>
