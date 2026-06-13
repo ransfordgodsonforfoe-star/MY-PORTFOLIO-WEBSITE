@@ -54,8 +54,13 @@ body {
 }
 
 .menu-toggle {
-    display: none; /* Hidden by default on Desktop screens */
+    display: none; 
+    background: none;
+    border: none;
     color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 0;
 }
 
 /* NAV LINKS */
@@ -328,37 +333,34 @@ footer p {
         z-index: 1100;
     }
 
-    /* NEW COMPACT FLOATING DROPDOWN */
+    
+    .menu-toggle {
+        display: block; /* Shows button on mobile layout */
+    }
+
     .nav-links {
         position: fixed;
-        top: calc(var(--nav-height) + 10px); /* Sits slightly below navbar */
-        right: 5%;                           /* Anchored to the right side */
-        width: 220px;                        /* Compact, clean fixed width */
-        background: rgba(15, 23, 42, 0.95);  /* Clean dark glass */
+        top: calc(var(--nav-height) + 10px);
+        right: 5%;
+        left: auto; /* 🌟 CRITICAL: Overrides any leftover left: 0 positioning */
+        width: 220px;
+        background: #0f172a; /* Fallback for older mobile engines */
+        background: rgba(15, 23, 42, 0.98); 
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         border: 1px solid rgba(56, 189, 248, 0.2);
-        border-radius: 12px;                 /* Smooth rounded card look */
+        border-radius: 12px;
         flex-direction: column;
         display: none;
-        text-align: left;                    /* Left-aligned items inside the card */
+        text-align: left;
         padding: 20px;
-        gap: 15px;                           /* Spacing between links */
-        z-index: 999;
+        gap: 15px;
+        z-index: 2000; /* Pushes it securely over all other layers */
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     }
 
-    /* Keep the display behavior working with JavaScript */
     .nav-links.active {
         display: flex;
-    }
-
-    /* Give the menu links a bit more clickable space inside the card */
-    .nav-links li a {
-        display: block;
-        padding: 8px 5px;
-        font-size: 16px;
-        width: 100%;
     }
 
     .hero {
