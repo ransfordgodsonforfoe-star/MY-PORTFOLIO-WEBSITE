@@ -1,182 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ransford | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ransford | Portfolio</title>
 
-    <link rel="stylesheet" href="style7.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style7.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
+<!-- NAVBAR -->
 <header>
-    <nav class="navbar">
-        
+<nav class="navbar">
+<div class="logo">Ransford.</div>
 
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<div class="menu-toggle" id="menu-toggle">☰</div>
+
+<ul class="nav-links" id="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
 </header>
 
+<!-- HERO -->
 <section class="hero" id="home">
 
-    <div class="hero-text">
+<div class="hero-text">
+<h1>Hello, I'm <span>Ransford</span></h1>
 
-        <h1>Hello, I'm <span>Ransford</span></h1>
+<h3 id="typing"></h3>
 
-        <h3>Computer Science Student & Frontend Developer</h3>
+<p>
+Computer Science student at UMaT passionate about web development,
+software engineering, and building real-world solutions.
+</p>
 
-        <p>
-            Passionate about creating responsive websites,
-            learning software engineering and building digital
-            solutions that solve real-world problems.
-        </p>
+<div class="hero-buttons">
+<a href="#projects" class="btn">View Projects</a>
+<a href="#contact" class="btn-outline">Hire Me</a>
+<a href="https://github.com/ransfordgodsonforfoe-star" target="_blank" class="btn-outline">GitHub</a>
+</div>
+</div>
 
-        <div class="hero-buttons">
-            <a href="#projects" class="btn">View Projects</a>
-            <a href="Forfoe_Ransford_Godson_CV.docx" download class="btn-secondary">
-                Download CV
-            </a>
-        </div>
-
-        <div class="socials">
-            <a href="https://github.com/ransfordgodsonforfoe-star" target="_blank">GitHub</a>
-            
-        </div>
-
-    </div>
-
-    <div class="hero-image">
-        <img src="me.jpeg" alt="Ransford">
-    </div>
+<div class="hero-img">
+<img src="me.jpeg" alt="profile">
+</div>
 
 </section>
 
-<section class="about" id="about">
+<!-- ABOUT -->
+<section class="section" id="about">
+<h2>About Me</h2>
 
-    <h2>About Me</h2>
-
-    <p>
-        I am Ransford Godson Forfoe, a Computer Science student
-        at the University of Mines and Technology (UMaT), Ghana.
-
-        I am passionate about web development, software engineering,
-        and technology. I enjoy building modern websites while
-        continuously improving my programming and problem-solving skills.
-
-        My goal is to become a professional software engineer and
-        contribute to impactful technology solutions.
-    </p>
-
+<p>
+I am a Computer Science student at the University of Mines and Technology (UMaT), Ghana.
+I enjoy building modern, responsive websites and learning new technologies.
+My goal is to become a professional software engineer by 2029 graduation.
+</p>
 </section>
 
-<section class="skills" id="skills">
+<!-- EDUCATION -->
+<section class="section dark" id="education">
+<h2>Education</h2>
 
-    <h2>Skills</h2>
-
-    <div class="skills-container">
-
-        <div class="skill-card">HTML5</div>
-        <div class="skill-card">CSS3</div>
-        <div class="skill-card">JavaScript</div>
-        <div class="skill-card">Git</div>
-        <div class="skill-card">GitHub</div>
-        <div class="skill-card">Responsive Design</div>
-        <div class="skill-card">VS Code</div>
-        <div class="skill-card">Problem Solving</div>
-
-    </div>
-
+<div class="card">
+<h3>University of Mines and Technology (UMaT)</h3>
+<p>BSc Computer Science</p>
+<p>Expected Graduation: 2029</p>
+</div>
 </section>
 
-<section class="projects" id="projects">
+<!-- SKILLS -->
+<section class="section" id="skills">
+<h2>Skills</h2>
 
-    <h2>Projects</h2>
-
-    <div class="project-container">
-
-        <div class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>
-                A responsive personal portfolio website built
-                with HTML and CSS.
-            </p>
-        </div>
-
-        <div class="project-card">
-            <h3>Restaurant Website</h3>
-            <p>
-                A modern restaurant website with responsive layouts
-                and attractive design.
-            </p>
-        </div>
-
-        <div class="project-card">
-            <h3>Login Page</h3>
-            <p>
-                A modern authentication interface with clean UI.
-            </p>
-        </div>
-
-        <div class="project-card">
-            <h3>Temperature Converter</h3>
-            <p>
-                A JavaScript application for temperature conversion.
-            </p>
-        </div>
-
-    </div>
-
+<div class="grid">
+<div class="box">HTML</div>
+<div class="box">CSS</div>
+<div class="box">JavaScript</div>
+<div class="box">C++</div>
+<div class="box">Git</div>
+<div class="box">GitHub</div>
+<div class="box">Responsive Design</div>
+<div class="box">Problem Solving</div>
+</div>
 </section>
 
-<section class="contact" id="contact">
+<!-- PROJECTS -->
+<section class="section dark" id="projects">
+<h2>Projects</h2>
 
-    <h2>Contact Me</h2>
+<div class="grid">
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Modern responsive personal portfolio.</p>
+</div>
 
-    <p>Email: ransfordgodsonforfoe@gmail.com</p>
-    <p>Phone: +233 55 633 8102</p>
+<div class="card">
+<h3>Restaurant Website</h3>
+<p>Responsive restaurant landing page.</p>
+</div>
 
-    <form action="https://formspree.io/f/xvznbvqq" method="POST" class="contact-form">
+<div class="card">
+<h3>Login Page</h3>
+<p>Clean authentication UI design.</p>
+</div>
 
-    <input
-        type="text"
-        name="name"
-        placeholder="Your Name"
-        required
-    >
+<div class="card">
+<h3>Temperature Converter</h3>
+<p>JavaScript conversion tool.</p>
+</div>
+</div>
+</section>
 
-    <input
-        type="email"
-        name="email"
-        placeholder="Your Email"
-        required
-    >
+<!-- CONTACT -->
+<section class="section" id="contact">
+<h2>Contact Me</h2>
+<p>Telephone: +233 556 338 102 </p>
 
-    <textarea
-        name="message"
-        placeholder="Your Message"
-        required
-    ></textarea>
-
-    <button type="submit" class="btn">
-        Send Message
-    </button>
-
+<p>Email: ransfordgodsonforfoe@gmail.com</p>
+<br><br>
+<h3>Send a Message</h3>
+<form action="https://formspree.io/f/xvznbvqq" class="contact-form">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea placeholder="Your Message" required></textarea>
+<br><br>
+<button type="submit">Send Message</button>
 </form>
-
 </section>
 
-<footer>
+<footer class="footer">
+
     <p>© 2026 Ransford Godson Forfoe | All Rights Reserved</p>
+
+    <div class="footer-socials">
+
+        <a href="https://github.com/ransfordgodsonforfoe-star" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="mailto:ransfordgodsonforfoe@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <a href="#" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+    </div>
+
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
